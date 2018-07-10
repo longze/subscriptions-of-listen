@@ -1,0 +1,184 @@
+/**index.wxss**/
+
+page {
+  background: #fff;
+}
+
+.container {
+  padding-bottom: 80px;
+}
+
+/*==== 头图区块 ====*/
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner .banner-img {
+  display: block;
+  width: 100%;
+}
+/* 
+.banner .title-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 30.77rpx;
+  opacity: .8;
+}
+
+.banner .title-section .main-title {
+  display: block;
+  color: #523126;
+  padding: 48.27rpx 0 12.58rpx 0;
+  line-height: 43.44rpx;
+  font-size: 43.44rpx;
+  font-weight: 600;
+  text-shadow: 0 1px 2px #D6B898;
+}
+
+.banner .title-section .subhead {
+  display: block;
+  color: #524845;
+  font-size: 29.96rpx;
+} */
+
+.banner .search-section {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.banner .search-section .icon-search {
+  position: absolute;
+  z-index: 10;
+  top: 35rpx;
+  right: 35rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*==== 位置信息模块 ====*/
+.lbs {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+  text-align: left;
+  color: #555555;
+  font-size: 18px;
+}
+
+/*==== 导航 ====*/
+.nav {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #999;
+  font-family: 'PingFangSC-Regular';
+  font-size: 15px;
+  word-break: keep-all;
+}
+
+.nav .item {
+  padding: 15px;
+}
+
+.nav .actived {
+  color: #000;
+}
+
+/*==== 列表块 ====*/
+.stager-list {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 1em;
+}
+
+.stager-item {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.stager-item:last-child {
+  border: none;
+}
+
+.stager-item .header-img {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  margin-top: 15px;
+  border: 1px solid #E0E0E0;
+}
+
+.stager-item section {
+  flex: 1;
+  padding-left: 8px;
+  overflow: hidden;
+}
+
+.stager-item div {
+  display: block;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+.stager-item .title {
+  padding-top: 18px;
+  font-size: 18px;
+}
+
+.stager-item .name-line {
+  color: #555555;
+  padding-top: 10px;
+}
+
+.stager-item .address-line {
+  color: #999999;
+  padding: 10px 0 15px;
+}
+
+.stager-item .appointment-line {
+  line-height: 28px;
+}
+
+.stager-item .appointment {
+  display: inline-block;
+  background: #F5F5F5;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.stager-item .appointment span {
+  color: #fe6b0f;
+}
+
+.stager-item .num {
+  float: right;
+  font-size: 12px;
+  color: #999999;
+}
+
+/*==== 底部按钮 ====*/
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
+  background: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  color: #555555;
+}
+
+.bottom-bar .iconfont {
+  font-size: 18px;
+}

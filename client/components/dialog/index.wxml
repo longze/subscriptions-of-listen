@@ -1,0 +1,20 @@
+<!--components/dialog/index.wxml-->
+<section class="mask" wx:if="{{!hidden}}"></section>
+<article class="dialog" wx:if="{{!hidden}}">
+  <header class="dialog-title">{{title}}</header>
+  <section class="dialog-body">
+    <slot/>
+  </section>
+  <footer class="dialog-bottom-btns" wx:if="{{showCancel||showConfirm}}">
+    <button plain="true"
+            wx:if="{{showCancel}}"
+            class="btn cancel-btn"
+            style="color: {{cancelColor}}"
+            bindtap="cancel">取消</button>
+    <button plain="true"
+            wx:if="{{showConfirm}}"
+            class="btn confirm-btn"
+            style="color: {{confirmColor}}"
+            bindtap="confirm">确定</button>
+  </footer>
+</article>

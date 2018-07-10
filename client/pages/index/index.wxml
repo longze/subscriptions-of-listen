@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 头图 -->
+  <!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号授权 </button>
+  <div>
+    {{phoneNumber}}
+  </div> -->
+  <view class="banner">
+    <image class="banner-img" mode="widthFix" src="banner.png"></image>
+    <!-- <section class="title-section">
+      <text class="main-title">找过来人</text>
+      <text class="subhead">随时找附近的过来人聊聊</text>
+    </section> -->
+    <section class="search-section">
+      <i class="iconfont icon-search" bindtap="activeSearch"></i>
+    </section>
+  </view>
+  <!-- 地址行 -->
+  <view class="lbs">
+    <i class="iconfont icon-local"></i> {{locationName}}
+  </view>
+  <!-- 分类导航 -->
+  <scroll-view class="nav" scroll-x="true">
+    <text wx:for="{{classificationList}}"
+          wx:key="{{item.id}}"
+          class="item {{activedClassificationId == item.id ? 'actived' : ''}}"
+          data-id="{{item.id}}"
+          bindtap="onChangeClassification">{{item.text}}</text>
+  </scroll-view>
+  <!-- 列表页 -->
+  <view class="stager-list">
+    <article class="stager-item" wx:for="{{dataList}}" wx:key="id">
+      <image class="header-img"
+             mode="aspectFill"
+             bindtap="toStagerDetailPage"
+             data-id="{{item.id}}"
+             src="{{item.headerImgUrl}}"></image>
+      <section>
+        <div class="title ellipsis" bindtap="toStagerDetailPage" data-id="{{item.id}}">{{item.title}}</div>
+        <div class="name-line ellipsis" bindtap="toStagerDetailPage" data-id="{{item.id}}">{{item.name}} {{item.experienceTag}}/{{item.profession}}</div>
+        <div class="address-line" bindtap="toStagerDetailPage" data-id="{{item.id}}">{{item.distance}} {{item.address}}</div>
+        <div class="appointment-line">
+          <span class="appointment" bindtap="appoint" data-id="{{item.id}}">
+              <i class="iconfont icon-coffee"></i> 约见 <span>({{item.price}}元/次)</span>
+          </span>
+          <span class="num" bindtap="toStagerDetailPage" data-id="{{item.id}}">{{item.faced}}人见过</span>
+        </div>
+      </section>
+    </article>
+  </view>
+  <view class="bottom-bar" bindtap="toBeStager">
+    <i class="iconfont icon-join"></i> 成为过来人
+  </view>
+</view>
