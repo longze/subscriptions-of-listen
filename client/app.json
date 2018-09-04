@@ -6,7 +6,7 @@
     "backgroundColor":"#ffffff",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "小得到",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "简单得到",
+    "navigationBarTextStyle": "black"
   }
 }

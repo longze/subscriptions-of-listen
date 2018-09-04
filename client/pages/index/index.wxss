@@ -5,6 +5,7 @@ page {
 }
 
 .container {
+  padding-top: 20px;
   padding-bottom: 80px;
 }
 
@@ -166,19 +167,119 @@ page {
 }
 
 /*==== 底部按钮 ====*/
+
+
+.bottom-bar .iconfont {
+  font-size: 18px;
+}
+
+.icon-iconset {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.to-data {
+  display: block;
+  padding-left: 21px;
+  color: #999;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
+  height: 13px;
+}
+.plaing >.iconfont{
+  color: #FC6c04
+}
+.plaing > .data-name{
+  color: #FC6c04
+}
+.today-data {
+  padding-left: 21px;
+  color: #000;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 34px;
+  margin-top: 15px;
+}
+.data-warp {
+  margin-top: 24px;
+}
+.one-data{
+  padding-left: 17px;
+  color: #555;
+  font-size: 16px;
+}
+.one-data {
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 18px;
+}
+.data-name{
+  display: block;
+  line-height: 18px;
+  font-size: 16px;
+}
+.iconfont {
+  font-size: 18px;
+  color: #999;
+  margin-right: 8px;
+  line-height: 18px;
+}
+.kipt {
+  display: block;
+  width: 100%;
+  height: 14px;
+}
 .bottom-bar {
   position: fixed;
   bottom: 0;
   width: 100%;
   border-bottom: 1px solid #E0E0E0;
-  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.20);
   background: #fff;
-  text-align: center;
   font-size: 16px;
-  line-height: 48px;
+  box-sizing: border-box;
   color: #555555;
+  padding: 15px 0px 15px 30px;
 }
-
-.bottom-bar .iconfont {
-  font-size: 18px;
+.bottom-title{
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+.bottom-time {
+  font-size: 13px;
+  color: #999;
+  height: 13px;
+  margin-top: 8px;
+  line-height: 13px;
+  letter-spacing: 1px;
+}
+.bottom-bar > .iconfont{
+  position: absolute;
+  top: 25px;
+  right: 17px;
+  margin-right: 0px;
+  font-size: 38px;
+}
+.hr {
+  width: 90%;
+  background: rgba(0, 0, 0, 0.20);
+  height: 1px;
+  margin: 30px auto;
+}
+.icon-bofang {
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 30px;
+  margin-right: 0px;
+  width: 38px;
+  height: 38px
 }

@@ -3,21 +3,21 @@
 	"packOptions": {
 		"ignore": []
 	},
-  "client": "./client",
-  "svr": "./server",
-  "miniprogramRoot": "./client",
-  "qcloudRoot": "./server",
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
-	},  
+	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
 	"appid": "wxfbf75868ae4e02f0",
-	"projectname": "小得到",
+	"projectname": "%E5%B0%8F%E5%BE%97%E5%88%B0",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
